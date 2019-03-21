@@ -1,0 +1,32 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage
+@using Umbraco.Web
+@{
+    var multiLinks = Umbraco.AssignedContentItem.GetProperty("cTA").AsEnumerableOfOne();
+    var value = Umbraco.AssignedContentItem.Value<IPublishedContent>("mainImage");
+    var pickedMediaItem = value.Url;
+ }
+<!-- Banner -->
+<section id="banner" style="background-image: url(@pickedMediaItem)" >
+    <div class="inner">
+
+        @*@Model.*@
+        <h1>
+            <span>
+                @Umbraco.AssignedContentItem.GetProperty("heading").Value()
+            </span>
+        </h1>
+        <h4>
+            @Umbraco.AssignedContentItem.GetProperty("subHeading").Value()
+        </h4>
+            <ul class="actions">
+                @foreach (var item in multiLinks)
+                {
+                    IEnumerable<Umbraco.Web.Models.Link> links = (IEnumerable<Umbraco.Web.Models.Link>)item.Value();
+                    foreach (var link in links)
+                    {
+                        <li><a href="@link.Url" class="button alt">@link.Name</a></li>
+                    }
+                }
+            </ul>
+</div>
+</section>

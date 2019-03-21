@@ -1,0 +1,32 @@
+﻿@*@inherits Umbraco.Web.Mvc.UmbracoViewPage<*@
+@model IEnumerable<IPublishedContent>
+@using Umbraco.Web
+@{
+    string image = string.Empty;
+}
+
+<section id="two">
+    <div class="inner">
+        @foreach (var item in Model)
+        {
+            <article>
+                <div class="content">
+                    <header>
+                        <h3>@item.GetProperty("tiTitle").Value()</h3>
+                    </header>
+                    @if (item.Value<IPublishedContent>("tiImage") != null)
+                    {
+                        image = item.Value<IPublishedContent>("tiImage").Url;
+                        <div class="image fit">
+                            
+                            <img src="@image" alt=""/>
+                         </div>
+                    }
+                    <p>@item.GetProperty("tiContent").Value()</p>
+                </div>
+            </article>
+        }
+        
+
+    </div>
+</section>

@@ -1,0 +1,30 @@
+﻿<!-- Header -->
+@using UmbracoSample.Models
+@using Umbraco.Web.Models
+@inherits Umbraco.Web.Mvc.UmbracoViewPage<List<NavigationList>>
+<header id="header">
+    <div class="inner">
+        <a href="/home" class="logo">MassMutual</a>
+        <nav id="nav">
+            @RenderSubItems(Model)
+        </nav>
+    </div>
+</header>
+
+@helper RenderSubItems(List<NavigationList> listItems)
+{
+    if (listItems != null)
+    {
+        foreach (var item in listItems)
+        {
+            <a href="@item.Link.Url" target="@item.Link.Target">@item.Link.Text</a>
+            //To SubMenu is already implemented but need styles
+            @*if (item.HasSubNavigation)
+                {
+                <ul>
+                    @RenderSubItems(item.NavItems)
+                </ul>
+            }*@
+        }
+    }
+}

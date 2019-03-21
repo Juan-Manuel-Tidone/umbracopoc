@@ -1,0 +1,21 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage
+@using Umbraco.Web
+@using Umbraco.Web.Mvc
+@{
+    //La posta
+    var value = Umbraco.AssignedContentItem.Value<IPublishedContent>("image");
+    var title = Umbraco.AssignedContentItem.Value<string>("title");
+    var pickedMediaItem = value.Url;
+}
+<section id="main">
+    <div class="inner">
+        <header class="major special">
+            <h1>@title</h1>
+            <p>@Umbraco.AssignedContentItem.GetProperty("head").Value()</p>
+        </header>
+        <a href="#" class="image fit"><img src="@pickedMediaItem" alt="" /></a>
+        @Umbraco.AssignedContentItem.GetProperty("content").Value()
+    </div>
+</section>
+
+@Html.GetGridHtml(Umbraco.AssignedContentItem, "freeContent")

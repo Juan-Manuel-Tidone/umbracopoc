@@ -1,0 +1,82 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage
+@{
+	Layout = null;
+}
+<!DOCTYPE HTML>
+
+<html>
+<head>
+    <title>@Model.Value("pageTitle")</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="description" content="@Model.Value("bodyText")">
+    <link href="~/css/main.css" rel="stylesheet" />
+</head>
+<body>
+
+    <!-- Header -->
+    @{ Html.RenderAction("Header", "SiteSharedLayout");}
+
+    <a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+    @RenderBody()
+  
+    <!-- One -->
+  
+
+    <!-- Two -->
+    
+
+    <!-- Three -->
+    <section id="three">
+        <div class="inner">
+            <article>
+                <div class="content">
+                    <span class="icon fa-laptop"></span>
+                    <header>
+                        <h3>On the hunt for the most generous colleges</h3>
+                    </header>
+                    <p>To control your tuition costs, start with schools that offer generous scholarships and financial aid..</p>
+                    <ul class="actions">
+                        <li><a href="#" class="button alt">Learn More</a></li>
+                    </ul>
+                </div>
+            </article>
+            <article>
+                <div class="content">
+                    <span class="icon fa-laptop"></span>
+                    <header>
+                        <h3>Why you should get disability insurance and life insurance</h3>
+                    </header>
+                    <p>We all like to think that serious illness, disability, and early death won’t happen to us or to our loved ones. .</p>
+                    <ul class="actions">
+                        <li><a href="#" class="button alt">Learn More</a></li>
+                    </ul>
+                </div>
+            </article>
+            <article>
+                <div class="content">
+                    <span class="icon fa-laptop"></span>
+                    <header>
+                        <h3>You may be overpaying your taxes if …</h3>
+                    </header>
+                    <p>Through penalties, underfunding, or dividend goofs, you may be giving the IRS more than you owe..</p>
+                    <ul class="actions">
+                        <li><a href="#" class="button alt">Learn More</a></li>
+                    </ul>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    @{ Html.RenderAction("Footer", "SiteSharedLayout");}
+
+    <!-- Scripts -->
+    <script src="~/scripts/jquery.min.js"></script>
+    <script src="~/scripts/skel.min.js"></script>
+    <script src="~/scripts/util.js"></script>
+    <script src="~/scripts/main.js"></script>
+</body>
+</html>
+
+

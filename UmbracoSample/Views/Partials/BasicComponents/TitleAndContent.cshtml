@@ -1,0 +1,23 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage
+@using Umbraco.Web
+@{
+    var multiLinks = Umbraco.AssignedContentItem.GetProperty("tcCTA").AsEnumerableOfOne();
+}
+<section id="one">
+    <div class="inner">
+        <header>
+            <h2>@Umbraco.AssignedContentItem.GetProperty("tcHeading").Value()</h2>
+        </header>
+        <p>@Umbraco.AssignedContentItem.GetProperty("tcContent").Value()</p>
+        <ul class="actions">
+            @foreach (var item in multiLinks)
+            {
+                IEnumerable<Umbraco.Web.Models.Link> links = (IEnumerable<Umbraco.Web.Models.Link>)item.Value(); 
+                foreach (var link in links)
+                {
+                    <li><a href="@link.Url" class="button alt">@link.Name</a></li>
+                }
+            }
+        </ul>
+    </div>
+</section>
