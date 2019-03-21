@@ -2,8 +2,7 @@
 @using Umbraco.Web
 @using Umbraco.Web.Mvc
 @{
-    //La posta
-    var value = Umbraco.AssignedContentItem.Value<IPublishedContent>("image");
+     var value = Umbraco.AssignedContentItem.Value<IPublishedContent>("image");
     var title = Umbraco.AssignedContentItem.Value<string>("title");
     var pickedMediaItem = value.Url;
 }
