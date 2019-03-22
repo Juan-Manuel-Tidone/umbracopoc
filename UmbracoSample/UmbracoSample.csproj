@@ -393,26 +393,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\NuGetBackup\20190313-164854\Config\grid.editors.config.js" />
-    <Content Include="App_Data\NuGetBackup\20190313-164854\Config\Lang\cs-CZ.user.xml" />
-    <Content Include="App_Data\NuGetBackup\20190313-164854\Config\Lang\da-DK.user.xml" />
-    <Content Include="App_Data\NuGetBackup\20190313-164854\Config\Lang\de-DE.user.xml" />
-    <Content Include="App_Data\NuGetBackup\20190313-164854\Config\Lang\en-GB.user.xml" />
-    <Content Include="App_Data\NuGetBackup\20190313-164854\Config\Lang\en-US.user.xml" />
-    <Content Include="App_Data\NuGetBackup\20190313-164854\Config\Lang\es-ES.user.xml" />
-    <Content Include="App_Data\NuGetBackup\20190313-164854\Config\Lang\fr-FR.user.xml" />
-    <Content Include="App_Data\NuGetBackup\20190313-164854\Config\Lang\he-IL.user.xml" />
-    <Content Include="App_Data\NuGetBackup\20190313-164854\Config\Lang\it-IT.user.xml" />
-    <Content Include="App_Data\NuGetBackup\20190313-164854\Config\Lang\ja-JP.user.xml" />
-    <Content Include="App_Data\NuGetBackup\20190313-164854\Config\Lang\ko-KR.user.xml" />
-    <Content Include="App_Data\NuGetBackup\20190313-164854\Config\Lang\nb-NO.user.xml" />
-    <Content Include="App_Data\NuGetBackup\20190313-164854\Config\Lang\nl-NL.user.xml" />
-    <Content Include="App_Data\NuGetBackup\20190313-164854\Config\Lang\pl-PL.user.xml" />
-    <Content Include="App_Data\NuGetBackup\20190313-164854\Config\Lang\pt-BR.user.xml" />
-    <Content Include="App_Data\NuGetBackup\20190313-164854\Config\Lang\ru-RU.user.xml" />
-    <Content Include="App_Data\NuGetBackup\20190313-164854\Config\Lang\sv-SE.user.xml" />
-    <Content Include="App_Data\NuGetBackup\20190313-164854\Config\Lang\zh-CN.user.xml" />
-    <Content Include="App_Data\NuGetBackup\20190313-164854\Config\logviewer.searches.config.js" />
     <Content Include="App_Plugins\ModelsBuilder\modelsbuilder.controller.js" />
     <Content Include="App_Plugins\ModelsBuilder\modelsbuilder.html" />
     <Content Include="App_Plugins\ModelsBuilder\modelsbuilder.resource.js" />
@@ -2213,6 +2193,7 @@
     <Compile Include="Controller\BasicComponentsController.cs" />
     <Compile Include="Controller\HomeController.cs" />
     <Compile Include="Controller\SiteSharedLayoutController.cs" />
+    <Compile Include="Models\models.generated.cs" />
     <Compile Include="Models\ModelsBuilder.cs">
       <Generator>UmbracoModelsBuilder</Generator>
     </Compile>
@@ -2232,20 +2213,6 @@
     <Content Include="config\HealthChecks.config" />
     <Content Include="config\ClientDependency.config" />
     <Content Include="config\BackOfficeTours\getting-started.json" />
-    <Content Include="App_Data\NuGetBackup\20190313-164854\Config\BackOfficeTours\getting-started.json" />
-    <Content Include="App_Data\NuGetBackup\20190313-164854\Config\ClientDependency.config" />
-    <Content Include="App_Data\NuGetBackup\20190313-164854\Config\HealthChecks.config" />
-    <Content Include="App_Data\NuGetBackup\20190313-164854\Config\imageprocessor\cache.config" />
-    <Content Include="App_Data\NuGetBackup\20190313-164854\Config\imageprocessor\processing.config" />
-    <Content Include="App_Data\NuGetBackup\20190313-164854\Config\imageprocessor\security.config" />
-    <Content Include="App_Data\NuGetBackup\20190313-164854\Config\serilog.config" />
-    <Content Include="App_Data\NuGetBackup\20190313-164854\Config\serilog.user.config" />
-    <Content Include="App_Data\NuGetBackup\20190313-164854\Config\tinyMceConfig.config" />
-    <Content Include="App_Data\NuGetBackup\20190313-164854\Config\umbracoSettings.config" />
-    <Content Include="App_Data\NuGetBackup\20190313-164854\CopyLogs\ConfigBackup.log" />
-    <Content Include="App_Data\NuGetBackup\20190313-164854\CopyLogs\UmbracoBackup.log" />
-    <Content Include="App_Data\NuGetBackup\20190313-164854\CopyLogs\UmbracoCopy.log" />
-    <Content Include="App_Data\NuGetBackup\20190313-164854\Web.config" />
     <Content Include="introspect\assets\fonts\fontawesome-webfont.eot" />
     <Content Include="introspect\assets\fonts\fontawesome-webfont.ttf" />
     <Content Include="introspect\assets\fonts\fontawesome-webfont.woff" />
@@ -2393,9 +2360,7 @@
     <Analyzer Include="..\packages\Microsoft.CodeAnalysis.Analyzers.2.6.1\analyzers\dotnet\cs\Microsoft.CodeAnalysis.Analyzers.dll" />
     <Analyzer Include="..\packages\Microsoft.CodeAnalysis.Analyzers.2.6.1\analyzers\dotnet\cs\Microsoft.CodeAnalysis.CSharp.Analyzers.dll" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\NuGetBackup\20190313-164854\Umbraco\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

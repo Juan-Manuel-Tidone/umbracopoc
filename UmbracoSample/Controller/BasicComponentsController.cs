@@ -19,7 +19,8 @@ namespace UmbracoSample.Controller
 
         public ActionResult TitleAndContent()
         {
-            return PartialView("~/Views/Partials/BasicComponents/TitleAndContent.cshtml");
+            //IPublishedContent should be pass a the Model
+            return PartialView("~/Views/Partials/BasicComponents/TitleAndContent.cshtml", CurrentPage);
         }
 
         public ActionResult GenericContent()
