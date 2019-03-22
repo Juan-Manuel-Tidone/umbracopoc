@@ -10,13 +10,9 @@
         </header>
         <p>@Model.TcContent</p>
         <ul class="actions">
-            @foreach (var item in multiLinks)
+            @foreach (var item in Model.TcCta)
             {
-                IEnumerable<Umbraco.Web.Models.Link> links = (IEnumerable<Umbraco.Web.Models.Link>)item.Value(); 
-                foreach (var link in links)
-                {
-                    <li><a href="@link.Url" class="button alt">@link.Name</a></li>
-                }
+                <li><a href="@item.Url" class="button alt">@item.Name</a></li>
             }
         </ul>
     </div>
