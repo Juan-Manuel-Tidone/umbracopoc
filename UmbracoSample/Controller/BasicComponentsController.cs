@@ -14,7 +14,7 @@ namespace UmbracoSample.Controller
 
         public ActionResult Banner()
         {
-            return PartialView("~/Views/Partials/BasicComponents/Banner.cshtml");
+            return PartialView("~/Views/Partials/BasicComponents/Banner.cshtml", CurrentPage);
         }
 
         public ActionResult TitleAndContent()
