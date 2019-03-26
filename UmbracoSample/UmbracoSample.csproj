@@ -2210,6 +2210,8 @@
     <Compile Include="Controller\BasicComponentsController.cs" />
     <Compile Include="Controller\HomeController.cs" />
     <Compile Include="Controller\SiteSharedLayoutController.cs" />
+    <Compile Include="Helpers\HtmlHelperExtensions.cs" />
+    <Compile Include="Helpers\TypeHelper.cs" />
     <Compile Include="Models\models.generated.cs" />
     <Compile Include="Models\ModelsBuilder.cs">
       <Generator>UmbracoModelsBuilder</Generator>
@@ -2366,6 +2368,8 @@
     <Content Include="Views\homeV1.cshtml" />
     <Content Include="Views\webbaseTemplate2.cshtml" />
     <Content Include="Views\Partials\BasicComponents\TitleImage.cshtml" />
+    <Content Include="Views\Partials\NestedContent\mmTitleImage.cshtml" />
+    <Content Include="Views\Partials\NestedContent\mmTitleContentRender.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

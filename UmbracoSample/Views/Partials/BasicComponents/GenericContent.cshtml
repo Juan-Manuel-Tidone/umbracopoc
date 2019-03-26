@@ -1,6 +1,7 @@
-﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<GenericPage>
 @using Umbraco.Web
 @using Umbraco.Web.Mvc
+@using UmbracoSample.Helpers
 @{
      var value = Umbraco.AssignedContentItem.Value<IPublishedContent>("image");
     var title = Umbraco.AssignedContentItem.Value<string>("title");
@@ -18,3 +19,5 @@
 </section>
 
 @Html.GetGridHtml(Umbraco.AssignedContentItem, "freeContent")
+
+@Html.RenderNestedContentPartials(Model.Modules, new ViewDataDictionary())

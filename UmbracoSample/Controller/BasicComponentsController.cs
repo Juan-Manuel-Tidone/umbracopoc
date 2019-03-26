@@ -25,7 +25,7 @@ namespace UmbracoSample.Controller
 
         public ActionResult GenericContent()
         {
-            return PartialView("~/Views/Partials/BasicComponents/GenericContent.cshtml");
+            return PartialView("~/Views/Partials/BasicComponents/GenericContent.cshtml", CurrentPage);
         }
 
 

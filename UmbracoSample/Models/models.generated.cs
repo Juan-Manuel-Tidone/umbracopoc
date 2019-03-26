@@ -19,7 +19,7 @@ using Umbraco.ModelsBuilder;
 using Umbraco.ModelsBuilder.Umbraco;
 
 //[assembly: PureLiveAssembly]
-//[assembly: ModelsBuilderAssembly(PureLive = true, SourceHash = "1384d62dfe77eddc")]
+//[assembly: ModelsBuilderAssembly(PureLive = true, SourceHash = "1d01965ef355d91c")]
 //[assembly: System.Reflection.AssemblyVersion("0.0.0.1")]
 
 namespace Umbraco.Web.PublishedModels
@@ -513,25 +513,25 @@ namespace Umbraco.Web.PublishedModels
     }
 
     /// <summary>MM Title Content Render</summary>
-    [PublishedModel("mMTitleContentRender")]
-    public partial class MMtitleContentRender : PublishedElementModel
+    [PublishedModel("mmTitleContentRender")]
+    public partial class MmTitleContentRender : PublishedElementModel
     {
         // helpers
 #pragma warning disable 0109 // new is redundant
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.0.4")]
-        public new const string ModelTypeAlias = "mMTitleContentRender";
+        public new const string ModelTypeAlias = "mmTitleContentRender";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.0.4")]
         public new const PublishedItemType ModelItemType = PublishedItemType.Content;
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.0.4")]
         public new static PublishedContentType GetModelContentType()
             => PublishedModelUtility.GetModelContentType(ModelItemType, ModelTypeAlias);
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.0.4")]
-        public static PublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<MMtitleContentRender, TValue>> selector)
+        public static PublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<MmTitleContentRender, TValue>> selector)
             => PublishedModelUtility.GetModelPropertyType(GetModelContentType(), selector);
 #pragma warning restore 0109
 
         // ctor
-        public MMtitleContentRender(IPublishedElement content)
+        public MmTitleContentRender(IPublishedElement content)
             : base(content)
         { }
 
@@ -553,25 +553,25 @@ namespace Umbraco.Web.PublishedModels
     }
 
     /// <summary>MM Title Image</summary>
-    [PublishedModel("mMTitleImage")]
-    public partial class MMtitleImage : PublishedElementModel
+    [PublishedModel("mmTitleImage")]
+    public partial class MmTitleImage : PublishedElementModel
     {
         // helpers
 #pragma warning disable 0109 // new is redundant
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.0.4")]
-        public new const string ModelTypeAlias = "mMTitleImage";
+        public new const string ModelTypeAlias = "mmTitleImage";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.0.4")]
         public new const PublishedItemType ModelItemType = PublishedItemType.Content;
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.0.4")]
         public new static PublishedContentType GetModelContentType()
             => PublishedModelUtility.GetModelContentType(ModelItemType, ModelTypeAlias);
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.0.4")]
-        public static PublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<MMtitleImage, TValue>> selector)
+        public static PublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<MmTitleImage, TValue>> selector)
             => PublishedModelUtility.GetModelPropertyType(GetModelContentType(), selector);
 #pragma warning restore 0109
 
         // ctor
-        public MMtitleImage(IPublishedElement content)
+        public MmTitleImage(IPublishedElement content)
             : base(content)
         { }
 
