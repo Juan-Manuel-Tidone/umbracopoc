@@ -1,7 +1,12 @@
 ﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<MmTitleImage>
+<article>
+    <div class="content">
+        <header>
+            <h3>@Model.RHeading</h3>
+        </header>
+        <div class="image fit">
+             <img src="@Model.RImage.Url" alt=""/>
+        </div>
+    </div>
+</article>
 
-<h1>Hello from Title and Image Render</h1>
-<h2>@Model.RHeading</h2>
-<div class="image fit">
-    <img src="@Model.RImage.Url" alt=""/>
-</div>

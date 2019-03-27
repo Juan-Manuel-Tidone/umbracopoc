@@ -20,4 +20,8 @@
 
 @Html.GetGridHtml(Umbraco.AssignedContentItem, "freeContent")
 
-@Html.RenderNestedContentPartials(Model.Modules, new ViewDataDictionary())
+<section id="two">
+    <div class="inner">
+        @Html.RenderNestedContentPartials(Model.Modules, new ViewDataDictionary())
+    </div>
+</section>
