@@ -487,6 +487,10 @@
     <Content Include="scripts\main.js" />
     <Content Include="scripts\modernizr-2.6.2.js" />
     <Content Include="scripts\skel.min.js" />
+    <Content Include="scripts\UmbracoSample\dist\inline.bundle.js" />
+    <Content Include="scripts\UmbracoSample\dist\main.bundle.js" />
+    <Content Include="scripts\UmbracoSample\dist\polyfills.bundle.js" />
+    <Content Include="scripts\UmbracoSample\dist\vendor.bundle.js" />
     <Content Include="scripts\util.js" />
     <Content Include="Umbraco\assets\css\canvasdesigner.css" />
     <Content Include="Umbraco\assets\css\installer.css" />
@@ -2207,6 +2211,7 @@
     <Content Include="Views\generic.cshtml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controller\AngularController.cs" />
     <Compile Include="Controller\BasicComponentsController.cs" />
     <Compile Include="Controller\HomeController.cs" />
     <Compile Include="Controller\SiteSharedLayoutController.cs" />
@@ -2370,6 +2375,8 @@
     <Content Include="Views\Partials\BasicComponents\TitleImage.cshtml" />
     <Content Include="Views\Partials\NestedContent\mmTitleImage.cshtml" />
     <Content Include="Views\Partials\NestedContent\mmTitleContentRender.cshtml" />
+    <Content Include="Views\webtemplateAngular.cshtml" />
+    <Content Include="Views\Partials\AngularComponents\appComponent.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -2381,7 +2388,9 @@
     <Analyzer Include="..\packages\Microsoft.CodeAnalysis.Analyzers.2.6.1\analyzers\dotnet\cs\Microsoft.CodeAnalysis.Analyzers.dll" />
     <Analyzer Include="..\packages\Microsoft.CodeAnalysis.Analyzers.2.6.1\analyzers\dotnet\cs\Microsoft.CodeAnalysis.CSharp.Analyzers.dll" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Views\Angular\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

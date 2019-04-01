@@ -1,0 +1,29 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage
+@{
+	Layout = null;
+}
+<!DOCTYPE HTML>
+
+<html>
+<head>
+    <title>@Model.Value("pageTitle")</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="description" content="@Model.Value("bodyText")">
+    <link href="~/css/main.css" rel="stylesheet" />
+   
+
+</head>
+<body>
+    <app-root>Angular Layout</app-root>
+
+    <script type="text/javascript" src="~/scripts/UmbracoSample/dist/inline.bundle.js"></script>
+    <script type="text/javascript" src="~/scripts/UmbracoSample/dist/polyfills.bundle.js"></script>
+    @*<script type="text/javascript" src="~/scripts/UmbracoSample/dist/styles.bundle.js"></script>*@
+    <script type="text/javascript" src="~/scripts/UmbracoSample/dist/vendor.bundle.js"></script>
+    <script type="text/javascript" src="~/scripts/UmbracoSample/dist/main.bundle.js"></script>
+</body>
+</html>
+
+
+
